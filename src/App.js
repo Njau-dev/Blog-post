@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Navbar />
       
-        <div class="content">
+        <div>
         <Switch>
           
           {/* <Form /> */}
