@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Home from './Components/Home';
 import Contact from './Components/Contacts';
+import NewsLetter from './footer';
 
 function App() {
   return (
@@ -31,9 +32,11 @@ function App() {
             <Contact />
           </Route>
             
-        </Switch>
+          </Switch>
+          
+          <NewsLetter />
         </div>
-      
+        
       </div>
     </Router>
 
