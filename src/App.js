@@ -18,14 +18,14 @@ function App() {
         <div>
         <Switch>
           
-          {/* <Form /> */}
         
           <Route exact path="/">
               <Home/>
           </Route>
 
           <Route exact path="/Create" >
-            <TextControlsExample />
+              {/* <TextControlsExample /> */}
+              <Form />
           </Route>
               
           <Route exact path="/Contact">
@@ -34,7 +34,7 @@ function App() {
             
           </Switch>
           
-          <NewsLetter />
+          {/* <NewsLetter /> */}
         </div>
         
       </div>
