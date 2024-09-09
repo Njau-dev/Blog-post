@@ -1,4 +1,7 @@
+import axios from "axios";
 import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Form = () => {
 
@@ -20,10 +23,31 @@ const Form = () => {
         //this happens because we added a name property on each input
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:4000/blogs', data)
+            .then(res => {
+                toast.success('new blog added successfully', {
+                    position: toast.POSITION.TOP_LEFT,
+                    autoClose: 3000,
+                })
+               
+
+            })
+        
+            .catch(err => {
+                toast.error('An error occured while adding the blog', {
+                    position: toast.POSITION.TOP_LEFT,
+                    autoClose: 3000,
+                }) 
+            })
+
+
+    }
 
     return (
         <div className="form-parent">
-            <form id="create-form" action="">
+            <form id="create-form" onSubmit={handleSubmit}>
                 <label htmlFor="Title">Title:</label>
                 <input type="text" name="title" onChange={handleChange} placeholder="Enter the title" id="borders"/>
                 
@@ -35,13 +59,15 @@ const Form = () => {
                 <textarea rows={'4'} name="body" onChange={handleChange} id="borders"></textarea>
 
 
-                <button>save blog</button>
+                <button type="submit">save blog</button>
 
+                <ToastContainer />
+                
             </form>
 
-            <p>the author is {data.author}</p>
+            {/* <p>the author is {data.author}</p>
             <p>the title is {data.title}</p>
-            <p>the content is {data.body}</p>
+            <p>the content is {data.body}</p> */}
 
         </div>
     );

@@ -105,7 +105,7 @@ body {
   text-align: left;
 }
 
-.home-stories {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;

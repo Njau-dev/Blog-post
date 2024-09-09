@@ -1,0 +1,97 @@
+{
+  "blogs": [
+    {
+      "title": "Web development",
+      "author": "Njau Jeff",
+      "body": "This is a test json server to store our data from the blog page and then render it on the page, the page is made with react and it is one to admire for sure",
+      "id": "5"
+    },
+    {
+      "id": "9530"
+    },
+    {
+      "id": "7354",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "3bac",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "ad63",
+      "title": "jsrkfs",
+      "author": "nlkenfl",
+      "body": "nvlakfn"
+    },
+    {
+      "id": "b9d7",
+      "title": "kjafka",
+      "author": "fkaefnk",
+      "body": "nflanfdl"
+    },
+    {
+      "id": "7a7a",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "c000",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "0b1f",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "47e8",
+      "title": "kwuhfkuse",
+      "author": "ksdhfka",
+      "body": "kidsavia"
+    },
+    {
+      "id": "5d37",
+      "title": "kwuhfkuse",
+      "author": "ksdhfka",
+      "body": "kidsavia"
+    },
+    {
+      "id": "fd50",
+      "title": "kwuhfkuse",
+      "author": "ksdhfka",
+      "body": "kidsavia"
+    },
+    {
+      "id": "75b1",
+      "title": "kwuhfkuse",
+      "author": "ksdhfka",
+      "body": "kidsavia"
+    },
+    {
+      "id": "7acf",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "018b",
+      "title": "",
+      "author": "",
+      "body": ""
+    },
+    {
+      "id": "74b1",
+      "title": "knefla",
+      "author": "mf;aenmflk",
+      "body": "test"
+    }
+  ]
+}

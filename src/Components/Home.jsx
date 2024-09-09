@@ -1,23 +1,28 @@
 import BasicExample from "./stories";
+import useFetch from "./useFetch";
+// import 
+
 
 const Home = () => {
     return (
-        <div className="home-stories">
+        <div className="home">
 
             <h2>Stories</h2>
 
-            <div className="stories">
-
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-
-            </div>
+            
         </div>
     );
 }
 
 export default Home;
+
+{/* <div className="stories">
+
+                <BasicExample />
+                <BasicExample />
+                <BasicExample />
+                <BasicExample />
+                <BasicExample />
+                <BasicExample />
+
+            </div> */}
