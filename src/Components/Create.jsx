@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+
 
 const Form = () => {
 
@@ -10,6 +11,11 @@ const Form = () => {
         author: '',
         body: ''
     })
+
+    // useEffect({
+
+    // }, [])
+    
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -30,8 +36,7 @@ const Form = () => {
                 toast.success('new blog added successfully', {
                     position: toast.POSITION.TOP_LEFT,
                     autoClose: 3000,
-                })
-               
+                }) 
 
             })
         
@@ -64,10 +69,6 @@ const Form = () => {
                 <ToastContainer />
                 
             </form>
-
-            {/* <p>the author is {data.author}</p>
-            <p>the title is {data.title}</p>
-            <p>the content is {data.body}</p> */}
 
         </div>
     );

@@ -1,28 +1,17 @@
-import BasicExample from "./stories";
 import useFetch from "./useFetch";
-// import 
+import BlogList from "./bloglist";
 
 
 const Home = () => {
+    const {data:blogs} = useFetch('http://localhost:4000/blogs')
+
     return (
         <div className="home">
-
-            <h2>Stories</h2>
-
             
+            {blogs && <BlogList blogs={blogs} title="All Blogs" />}
+
         </div>
     );
 }
 
 export default Home;
-
-{/* <div className="stories">
-
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-                <BasicExample />
-
-            </div> */}
