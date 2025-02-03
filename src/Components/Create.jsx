@@ -31,7 +31,7 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:4000/blogs', data)
+        axios.post('https://blog-post-sage-six.vercel.app/blogs', data)
             .then(res => {
                 toast.success('new blog added successfully', {
                     position: toast.POSITION.TOP_LEFT,
